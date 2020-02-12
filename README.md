@@ -2,7 +2,8 @@
 
 [![Build Status](https://travis-ci.org/wellcomecollection/{terraform_module_name}.svg?branch=master)](https://travis-ci.org/wellcomecollection/terraform-aws-vhs)
 
-Creates the storage infrastructure required to use an instance of the HybridStore library in https://github.com/wellcometrust/scala-storage
+Creates the storage infrastructure required to use an instance of the HybridStore library in
+[Wellcome Collection's Scala Storage library][scala_storage_repo].
 
 ## Usage
 
@@ -27,3 +28,4 @@ module "example_implementation" {
 - `bucket_name` - Name of the S3 bucket
 - `bucket_arn` - ARN of the S3 bucket
 
+[scala_storage_repo]: https://github.com/wellcometrust/scala-storage
