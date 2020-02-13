@@ -13,7 +13,7 @@ match the type of store you're using in your application.
 
 ```hcl2
 
-# Single version store
+# hash store
 module "example_implementation" {
   source = "git::github.com/wellcomecollection/terraform-aws-vhs.git//hash-store?ref=v2.0.0"
   name = "big_store"
@@ -21,7 +21,7 @@ module "example_implementation" {
   bucket_name_prefix = "org-vhs"
 }
 
-# Multi version store
+# hash range store
 module "example_implementation" {
   source = "git::github.com/wellcomecollection/terraform-aws-vhs.git//hash-range-store?ref=v2.0.0"
   name = "big_store"
