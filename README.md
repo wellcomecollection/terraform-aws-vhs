@@ -7,16 +7,15 @@ Creates the storage infrastructure required to use an instance of the HybridStor
 
 ## Usage
 
-You can either use a `single-version-store` or `multi-version-store` implementation, which must
+You can either use a `hash-store` or `hash-range-store` implementation, which must
 match the type of store you're using in your application.
-
 
 
 ```hcl2
 
 # Single version store
 module "example_implementation" {
-  source = "git::github.com/wellcomecollection/terraform-aws-vhs.git//single-version-store?ref=v2.0.0"
+  source = "git::github.com/wellcomecollection/terraform-aws-vhs.git//hash-store?ref=v2.0.0"
   name = "big_store"
   table_name_prefix = "org-vhs"
   bucket_name_prefix = "org-vhs"
@@ -24,7 +23,7 @@ module "example_implementation" {
 
 # Multi version store
 module "example_implementation" {
-  source = "git::github.com/wellcomecollection/terraform-aws-vhs.git//multi-version-store?ref=v2.0.0"
+  source = "git::github.com/wellcomecollection/terraform-aws-vhs.git//hash-range-store?ref=v2.0.0"
   name = "big_store"
   table_name_prefix = "org-vhs"
   bucket_name_prefix = "org-vhs"

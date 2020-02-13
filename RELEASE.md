@@ -1,3 +1,3 @@
 RELEASE_TYPE: major
 
-Make multi/single version stores available for the different implementations within the scala-storage library.
+Differentiate between hash-store and has-range-store for the different implementations within the scala-storage library.
