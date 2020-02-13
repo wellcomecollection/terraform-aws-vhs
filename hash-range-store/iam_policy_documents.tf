@@ -1,5 +1,5 @@
 data "aws_iam_policy_document" "read_policy" {
-  # This is based on the AmazonDynamoDBReadOnlyAccess
+  # This is based on the AmazonDynamoDBReadOnlyAccess policy
   statement {
     actions = [
       "dynamodb:BatchGetItem",
