@@ -7,10 +7,23 @@ Creates the storage infrastructure required to use an instance of the HybridStor
 
 ## Usage
 
+You can either use a `hash-store` or `hash-range-store` implementation, which must
+match the type of store you're using in your application.
+
+
 ```hcl2
 
+# hash store
 module "example_implementation" {
-  source = "../../"
+  source = "git::github.com/wellcomecollection/terraform-aws-vhs.git//hash-store?ref=v2.0.0"
+  name = "big_store"
+  table_name_prefix = "org-vhs"
+  bucket_name_prefix = "org-vhs"
+}
+
+# hash range store
+module "example_implementation" {
+  source = "git::github.com/wellcomecollection/terraform-aws-vhs.git//hash-range-store?ref=v2.0.0"
   name = "big_store"
   table_name_prefix = "org-vhs"
   bucket_name_prefix = "org-vhs"
