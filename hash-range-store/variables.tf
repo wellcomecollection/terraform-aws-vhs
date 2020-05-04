@@ -11,3 +11,9 @@ variable "table_name_prefix" {
   description = "A prefix to the DynamoDB table that stores the keys"
   default     = ""
 }
+
+variable "force_destroy" {
+  type = bool
+  default = false
+  description = "Allows the destruction of non-empty VHS buckets"
+}
