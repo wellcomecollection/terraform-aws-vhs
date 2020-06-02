@@ -45,7 +45,7 @@ data "aws_iam_policy_document" "full_access_policy" {
   statement {
     actions = [
       "s3:List*",
-      "s3:List*",
+      "s3:Get*",
       "s3:PutObject*",
     ]
 
