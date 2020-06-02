@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.2.1 - 2020-06-02
+
+Fix read access in the read-write policy.
+
 ## v3.2.0 - 2020-06-02
 
 Add support for tags in both hash-range-store and hash-store.
