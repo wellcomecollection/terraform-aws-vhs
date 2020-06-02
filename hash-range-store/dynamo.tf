@@ -16,4 +16,6 @@ resource "aws_dynamodb_table" "table" {
     name = "version"
     type = "N"
   }
+
+  tags = var.tags
 }
