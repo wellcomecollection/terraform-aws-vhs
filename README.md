@@ -10,9 +10,13 @@ Creates the storage infrastructure required to use an instance of the HybridStor
 You can either use a `hash-store` or `hash-range-store` implementation, which must
 match the type of store you're using in your application.
 
+*   A *hash store* is for a VHS whose DynamoDB table only has a hash key.
+    Use this if you only want to store the latest version of a record.
+
+*   A *hash store* is for a VHS whose DynamoDB table has a hash key and a range key.
+    Use this if you want to store every version of a record.
 
 ```hcl2
-
 # hash store
 module "example_implementation" {
   source = "git::github.com/wellcomecollection/terraform-aws-vhs.git//hash-store?ref=v2.0.0"
@@ -28,7 +32,6 @@ module "example_implementation" {
   table_name_prefix = "org-vhs"
   bucket_name_prefix = "org-vhs"
 }
-
 ```
 
 ## Outputs
