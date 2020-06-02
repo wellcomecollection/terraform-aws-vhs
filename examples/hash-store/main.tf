@@ -3,4 +3,8 @@ module "example_implementation" {
   name = "hash_store"
   table_name_prefix = "org-vhs"
   bucket_name_prefix = "org-vhs"
+
+  tags = {
+    Name = "ACME Corp"
+  }
 }
