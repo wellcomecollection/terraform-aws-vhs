@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.2.0 - 2020-06-02
+
+Add support for tags in both hash-range-store and hash-store.
+
 ## v3.1.0 - 2020-06-02
 
 Restrict the S3 permissions on the exported policies, so VHS workers can only modify objects inside the buckets, rather than the buckets themselves.
