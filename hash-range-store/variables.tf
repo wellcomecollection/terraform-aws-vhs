@@ -18,3 +18,15 @@ variable "table_name_prefix" {
 variable "tags" {
   type = map(string)
 }
+
+variable "table_name" {
+  description = "Overrides default naming scheme to use specified table name"
+  type = string
+  default = ""
+}
+
+variable "bucket_name" {
+  description = "Overrides default naming scheme to use specified bucket name"
+  type = string
+  default = ""
+}
