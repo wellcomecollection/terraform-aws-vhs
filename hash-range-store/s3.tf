@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "bucket" {
-  bucket = "${var.bucket_name_prefix}${lower(var.name)}"
+  bucket = local.bucket_name
 
   tags = var.tags
 }

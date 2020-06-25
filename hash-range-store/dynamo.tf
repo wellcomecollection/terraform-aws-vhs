@@ -1,5 +1,5 @@
 resource "aws_dynamodb_table" "table" {
-  name             = "${var.table_name_prefix}${var.name}"
+  name             = local.table_name
   hash_key         = "id"
   range_key        = "version"
   stream_enabled   = true
