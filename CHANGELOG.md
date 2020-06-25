@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.3.1 - 2020-06-25
+
+actually use var names in hash range store
+
 ## v3.3.0 - 2020-06-25
 
 Adds table_name, and bucket_name variables to the hash range store to allow the sepcified names to override the existing naming scheme.
