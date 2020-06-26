@@ -16,7 +16,7 @@ data "aws_iam_policy_document" "read_policy" {
   }
 
   statement {
-    principals = {
+    principals {
       identifiers = var.read_principals
       type        = "AWS"
     }
