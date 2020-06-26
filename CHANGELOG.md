@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.4.1 - 2020-06-26
+
+fix: principals should be block not argument
+
 ## v3.4.0 - 2020-06-26
 
 Allow setting `read_principals` from variable.
