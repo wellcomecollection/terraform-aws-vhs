@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.4.0 - 2020-06-26
+
+Allow setting `read_principals` from variable.
+
 ## v3.3.1 - 2020-06-25
 
 actually use var names in hash range store
