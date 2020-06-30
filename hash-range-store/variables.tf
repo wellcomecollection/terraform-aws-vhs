@@ -30,8 +30,3 @@ variable "bucket_name" {
   type = string
   default = ""
 }
-
-variable "read_principals" {
-  default = []
-  type    = list(string)
-}

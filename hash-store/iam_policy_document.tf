@@ -16,11 +16,6 @@ data "aws_iam_policy_document" "read_policy" {
   }
 
   statement {
-    principals {
-      identifiers = var.read_principals
-      type        = "AWS"
-    }
-
     actions = [
       "s3:List*",
       "s3:Get*",
