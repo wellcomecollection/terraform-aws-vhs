@@ -18,8 +18,3 @@ variable "table_name_prefix" {
 variable "tags" {
   type = map(string)
 }
-
-variable "read_principals" {
-  default = []
-  type    = list(string)
-}
