@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.4.2 - 2020-06-30
+
+Remove principals section, it breaks things.
+
 ## v3.4.1 - 2020-06-26
 
 fix: principals should be block not argument
