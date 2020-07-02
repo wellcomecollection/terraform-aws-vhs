@@ -10,6 +10,10 @@ output "full_access_policy" {
   value = data.aws_iam_policy_document.full_access_policy.json
 }
 
+output "assumable_read_role" {
+  value = aws_iam_role.assumable_read_role.arn
+}
+
 output "table_name" {
   value = aws_dynamodb_table.table.name
 }
