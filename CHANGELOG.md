@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.4.3 - 2020-07-02
+
+Give permission to assume read role.
+
 ## v3.4.2 - 2020-06-30
 
 Remove principals section, it breaks things.
