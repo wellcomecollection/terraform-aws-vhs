@@ -37,6 +37,6 @@ variable "read_principals" {
 }
 
 variable "cycle_objects_to_standard_ia" {
-  type    = boolean
+  type    = bool
   default = true
 }
