@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v3.5.0 - 2020-07-27
+
+Automatically cycle S3 objects in VHS to the Standard-IA storage class after 30 days.
+This reduces the cost of running a VHS.
+
+You can disable this behaviour by setting `cycle_objects_to_standard_ia = false`.
+
 ## v3.4.3 - 2020-07-02
 
 Give permission to assume read role.
