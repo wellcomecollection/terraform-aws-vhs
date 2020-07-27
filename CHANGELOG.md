@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.5.1 - 2020-07-27
+
+Fix a bug in the variable definitions of the two VHS modules.
+
 ## v3.5.0 - 2020-07-27
 
 Automatically cycle S3 objects in VHS to the Standard-IA storage class after 30 days.
