@@ -23,3 +23,8 @@ variable "read_principals" {
   default = []
   type    = list(string)
 }
+
+variable "cycle_objects_to_standard_ia" {
+  type    = boolean
+  default = true
+}
