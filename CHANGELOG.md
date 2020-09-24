@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.5.2 - 2020-09-24
+
+Bump for release.
+
 ## v3.5.1 - 2020-07-27
 
 Fix a bug in the variable definitions of the two VHS modules.
