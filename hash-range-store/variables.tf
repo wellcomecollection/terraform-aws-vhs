@@ -21,14 +21,14 @@ variable "tags" {
 
 variable "table_name" {
   description = "Overrides default naming scheme to use specified table name"
-  type = string
-  default = ""
+  type        = string
+  default     = ""
 }
 
 variable "bucket_name" {
   description = "Overrides default naming scheme to use specified bucket name"
-  type = string
-  default = ""
+  type        = string
+  default     = ""
 }
 
 variable "read_principals" {
