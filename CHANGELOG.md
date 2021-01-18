@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.5.3 - 2021-01-18
+
+Add the `Name` tag to DynamoDB tables created by this module.
+
 ## v3.5.2 - 2020-09-24
 
 Bump for release.
