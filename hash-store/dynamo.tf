@@ -1,5 +1,9 @@
+locals {
+  table_name = "${var.table_name_prefix}${var.name}"
+}
+
 resource "aws_dynamodb_table" "table" {
-  name             = "${var.table_name_prefix}${var.name}"
+  name             = local.table_name
   hash_key         = "id"
   stream_enabled   = true
   stream_view_type = "NEW_AND_OLD_IMAGES"
@@ -11,5 +15,10 @@ resource "aws_dynamodb_table" "table" {
     type = "S"
   }
 
-  tags = var.tags
+  tags = merge(
+    var.tags,
+    {
+      Name = local.table_name
+    }
+  )
 }

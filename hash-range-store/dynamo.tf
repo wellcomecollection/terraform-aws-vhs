@@ -17,5 +17,10 @@ resource "aws_dynamodb_table" "table" {
     type = "N"
   }
 
-  tags = var.tags
+  tags = merge(
+    var.tags,
+    {
+      Name = local.table_name
+    }
+  )
 }
