@@ -35,7 +35,7 @@ It also creates some IAM policies that can be used to read or modify the VHS.
 
 -   **Just S3?**
     DynamoDB supports [conditional writes] to ensure updates are ordered correctly; S3 does not.
-    We need correct ordering, so this is unsuitable for our stores.
+    We need correct ordering, so S3 wouldn't work for us.
 
 -   **Another database technology?**
     Plenty of databases have larger per-item limits and conditional writes (e.g. Cassandra, MySQL, Aurora), but we were already using DynamoDB and S3.
