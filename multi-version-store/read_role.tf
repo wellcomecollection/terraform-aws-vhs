@@ -1,5 +1,5 @@
 resource "aws_iam_role" "assumable_read_role" {
-  count = length(var.aws_principals) > 0 ? 1 : 0
+  count = length(var.read_principals) > 0 ? 1 : 0
 
   name               = "${var.name}-assumable_read_role"
   assume_role_policy = data.aws_iam_policy_document.assume_read_role.json
