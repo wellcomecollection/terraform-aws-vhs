@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v4.0.3 - 2021-06-23
+
+Only set the `assumable_read_role` output if a role was created.
+
 ## v4.0.2 - 2021-06-23
 
 *   Fix a bug in the v4.0.1 module.
