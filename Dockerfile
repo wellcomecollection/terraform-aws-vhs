@@ -1,4 +1,4 @@
-FROM python:3
+FROM 760097843905.dkr.ecr.eu-west-1.amazonaws.com/python:3.7
 
 ARG COMMAND
 VOLUME /workdir
