@@ -1,5 +1,5 @@
 resource "aws_dynamodb_table" "table" {
-  name             = var.table_name
+  name             = local.table_name
   hash_key         = "id"
   stream_enabled   = true
   stream_view_type = "NEW_AND_OLD_IMAGES"
@@ -14,7 +14,7 @@ resource "aws_dynamodb_table" "table" {
   tags = merge(
     var.tags,
     {
-      Name = var.table_name
+      Name = local.table_name
     }
   )
 }

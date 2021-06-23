@@ -1,5 +1,5 @@
 resource "aws_dynamodb_table" "table" {
-  name             = var.table_name
+  name             = local.table_name
   hash_key         = "id"
   range_key        = "version"
   stream_enabled   = true
@@ -20,7 +20,7 @@ resource "aws_dynamodb_table" "table" {
   tags = merge(
     var.tags,
     {
-      Name = var.table_name
+      Name = local.table_name
     }
   )
 }
