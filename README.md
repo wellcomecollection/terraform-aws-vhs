@@ -19,6 +19,7 @@ This is [Amazon's recommended approach][aws_recommends] for storing large values
 > If your application needs to store more data in an item than the DynamoDB size limit permits, you can try compressing one or more large attributes, or you can store them as an object in Amazon Simple Storage Service (Amazon S3) and store the Amazon S3 object identifier in your DynamoDB item.
 
 This module creates the DynamoDB table and S3 bucket for this purpose.
+It also creates some IAM policies that can be used to read or modify the VHS.
 
 [aws_recommends]: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-use-s3-too.html
 
