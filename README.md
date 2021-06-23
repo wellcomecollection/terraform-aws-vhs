@@ -1,6 +1,6 @@
 # terraform-aws-vhs
 
-[![Build status](https://badge.buildkite.com/e003c26e84856dea7d37fc77c9f6e393d3007984bfb6c80f96.svg?master)](https://buildkite.com/wellcomecollection/terraform-module-terraform-aws-vhs)
+[![Build status](https://badge.buildkite.com/e003c26e84856dea7d37fc77c9f6e393d3007984bfb6c80f96.svg?main)](https://buildkite.com/wellcomecollection/terraform-module-terraform-aws-vhs)
 
 Creates the storage infrastructure required to use an instance of the HybridStore library in
 [Wellcome Collection's Scala Storage library][scala_storage_repo].
