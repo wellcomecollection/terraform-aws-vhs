@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v4.0.5 - 2021-06-23
+
+Continue trying to fix the `assumable_read_role` output.
+
 ## v4.0.4 - 2021-06-23
 
 Continue trying to fix the `assumable_read_role` output.
