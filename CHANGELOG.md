@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v4.0.1 - 2021-06-23
+
+*   The `tags` variable now defaults to an empty map.
+*   Fix a couple of bugs in the v4.0.0 module.
+
 ## v4.0.0 - 2021-06-23
 
 Rename the modules to `single-version-store` and `multi-version-store` to better emphasise the difference between them.
