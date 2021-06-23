@@ -17,8 +17,8 @@ variable "table_name_prefix" {
 
 variable "table_name" {
   description = "Overrides default naming scheme to use specified table name"
-   type        = string
-   default     = ""
+  type        = string
+  default     = ""
 }
 
 variable "bucket_name" {
