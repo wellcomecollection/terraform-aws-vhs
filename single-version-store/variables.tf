@@ -1,5 +1,6 @@
 variable "name" {
-  type = string
+  description = "The name of the VHS instance"
+  type        = string
 }
 
 variable "bucket_name_prefix" {
