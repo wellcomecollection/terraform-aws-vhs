@@ -15,10 +15,6 @@ variable "table_name_prefix" {
   type        = string
 }
 
-variable "tags" {
-  type = map(string)
-}
-
 variable "table_name" {
   description = "Overrides default naming scheme to use specified table name"
   type        = string
@@ -31,12 +27,18 @@ variable "bucket_name" {
   default     = ""
 }
 
+variable "tags" {
+  type = map(string)
+}
+
 variable "read_principals" {
   default = []
   type    = list(string)
 }
 
 variable "cycle_objects_to_standard_ia" {
+  description = "Whether to cycle S3 objects to Standard-IA after 30 days (reduces costs if lookups are infrequent)"
+
   type    = bool
   default = true
 }

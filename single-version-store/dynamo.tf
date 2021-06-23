@@ -1,7 +1,3 @@
-locals {
-  table_name = "${var.table_name_prefix}${var.name}"
-}
-
 resource "aws_dynamodb_table" "table" {
   name             = local.table_name
   hash_key         = "id"
