@@ -11,7 +11,7 @@ output "full_access_policy" {
 }
 
 output "assumable_read_role" {
-  value = length(var.read_principals) > 0 ? aws_iam_role.assumable_read_role.arn[0] : ""
+  value = length(var.read_principals) > 0 ? aws_iam_role.assumable_read_role[0].arn : ""
 }
 
 output "table_name" {
