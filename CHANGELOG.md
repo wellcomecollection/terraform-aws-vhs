@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v4.0.0 - 2021-06-23
+
+Rename the modules to `single-version-store` and `multi-version-store` to better emphasise the difference between them.
+
+You can now use prefixed names or full names in both modules.
+
+Don't create the assumable read role if there are no principals allowed to assume it.
+
 ## v3.5.3 - 2021-01-18
 
 Add the `Name` tag to DynamoDB tables created by this module.
