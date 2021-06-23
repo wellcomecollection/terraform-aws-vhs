@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v4.0.2 - 2021-06-23
+
+*   Fix a bug in the v4.0.1 module.
+
 ## v4.0.1 - 2021-06-23
 
 *   The `tags` variable now defaults to an empty map.
