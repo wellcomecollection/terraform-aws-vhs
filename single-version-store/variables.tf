@@ -16,11 +16,15 @@ variable "table_name_prefix" {
 }
 
 variable "table_name" {
-  type = string
+  description = "Overrides default naming scheme to use specified table name"
+   type        = string
+   default     = ""
 }
 
 variable "bucket_name" {
-  type = string
+  description = "Overrides default naming scheme to use specified bucket name"
+  type        = string
+  default     = ""
 }
 
 variable "tags" {
