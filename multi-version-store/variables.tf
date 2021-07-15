@@ -43,8 +43,3 @@ variable "cycle_objects_to_standard_ia" {
   type    = bool
   default = true
 }
-
-variable "prevent_destroy" {
-  type    = bool
-  default = true
-}
