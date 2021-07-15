@@ -12,4 +12,8 @@ resource "aws_s3_bucket" "bucket" {
       storage_class = "STANDARD_IA"
     }
   }
+
+  lifecycle {
+    prevent_destroy = var.prevent_destroy
+  }
 }

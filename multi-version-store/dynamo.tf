@@ -23,4 +23,8 @@ resource "aws_dynamodb_table" "table" {
       Name = local.table_name
     }
   )
+
+  lifecycle {
+    prevent_destroy = var.prevent_destroy
+  }
 }
