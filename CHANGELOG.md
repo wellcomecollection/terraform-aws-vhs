@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v4.1.0 - 2021-07-15
+
+Add a `prevent_destroy` which is passed to the [`lifecycle` meta-argument](https://www.terraform.io/docs/language/meta-arguments/lifecycle.html).
+It defaults to `true` to prevent those resources from being deleted accidentally.
+
 ## v4.0.5 - 2021-06-23
 
 Continue trying to fix the `assumable_read_role` output.
