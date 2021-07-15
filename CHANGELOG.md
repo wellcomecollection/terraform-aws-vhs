@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v4.2.0 - 2021-07-15
+
+Roll abck the changes in v4.1.0 -- it turns out `lifecycle` can't be a variable.
+
 ## v4.1.0 - 2021-07-15
 
 Add a `prevent_destroy` which is passed to the [`lifecycle` meta-argument](https://www.terraform.io/docs/language/meta-arguments/lifecycle.html).
