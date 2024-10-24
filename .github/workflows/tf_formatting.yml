@@ -1,11 +1,15 @@
 # Runs auto-formatting script on push to any branch
 name: "Run terraform formatting"
 
+on:
+  push:
+    branches:
+      - "!main"
+  workflow_call:
+
 permissions:
   id-token: write
   contents: write
-
-on: push
 
 jobs:
   autoformat:
@@ -15,7 +19,7 @@ jobs:
       - name: Check out project
         uses: actions/checkout@v4
 
-      - name: terraform fmt
+      - name: terraform format (recursive)
         uses: dflook/terraform-fmt@v1
 
       - name: Check for formatting changes
