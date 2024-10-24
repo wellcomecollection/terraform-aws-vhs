@@ -3,8 +3,8 @@ name: "Run terraform formatting"
 
 on:
   push:
-    branches:
-      - "!main"
+    branches-ignore:
+      - main
   workflow_call:
 
 permissions:
