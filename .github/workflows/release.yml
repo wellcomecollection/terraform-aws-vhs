@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   autoformat:
-    uses: ./tf_formatting.yml
+    uses: ./.github/workflows/tf_formatting.yml
   
   # First, check if there is a RELEASE.md file in the root of the repository.
   # If not, no release will be created and subsequent steps and jobs will be skipped.
