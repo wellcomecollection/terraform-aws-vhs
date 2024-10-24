@@ -39,8 +39,8 @@ jobs:
     needs: check-for-release-file
     if: needs.check-for-release-file.outputs.has-release == 'true'
     steps:
+      - uses: actions/checkout@v4
       - name: Update CHANGELOG.md and version
-        uses: actions/checkout@v4
         id: create-release
         run: |
           git fetch --tags
