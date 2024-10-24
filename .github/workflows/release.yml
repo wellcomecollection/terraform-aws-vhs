@@ -21,8 +21,8 @@ jobs:
       has-release: ${{ steps.check-for-release-file.outputs.has-release }}
     needs: autoformat
     steps:
+      - uses: actions/checkout@v4
       - name: Check for RELEASE.md file
-        uses: actions/checkout@v4
         id: check-for-release-file
         run: |
           if [ ! -f ./RELEASE.md ]; then
