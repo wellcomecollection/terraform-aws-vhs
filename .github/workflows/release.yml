@@ -39,7 +39,9 @@ jobs:
     needs: check-for-release-file
     if: needs.check-for-release-file.outputs.has-release == 'true'
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+      
       - name: Update CHANGELOG.md and version
         id: create-release
         run: |
