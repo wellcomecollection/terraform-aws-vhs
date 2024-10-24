@@ -22,7 +22,7 @@ jobs:
     needs: autoformat
     steps:
       - name: Check for RELEASE.md file
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
         id: check-for-release-file
         run: |
           if [ ! -f ./RELEASE.md ]; then
@@ -40,7 +40,7 @@ jobs:
     if: needs.check-for-release-file.outputs.has-release == 'true'
     steps:
       - name: Update CHANGELOG.md and version
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
         id: create-release
         run: |
           git fetch --tags
