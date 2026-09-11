@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## v4.3.0 - 2026-09-11
+
+Add `deletion_protection_enabled` and `point_in_time_recovery_enabled` variables
+to both stores, so a VHS table can be protected against accidental deletion and
+restored to a point in time.
+
+Both default to `false`, which is what the module did before, so existing
+callers see no change.
+
 ## v4.2.0 - 2021-07-15
 
 Roll abck the changes in v4.1.0 -- it turns out `lifecycle` can't be a variable.
