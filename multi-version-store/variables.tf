@@ -43,3 +43,17 @@ variable "cycle_objects_to_standard_ia" {
   type    = bool
   default = true
 }
+
+variable "deletion_protection_enabled" {
+  description = "Whether DynamoDB deletion protection is enabled on the table"
+
+  type    = bool
+  default = false
+}
+
+variable "point_in_time_recovery_enabled" {
+  description = "Whether DynamoDB point-in-time recovery is enabled on the table"
+
+  type    = bool
+  default = false
+}
