@@ -6,6 +6,12 @@ resource "aws_dynamodb_table" "table" {
 
   billing_mode = "PAY_PER_REQUEST"
 
+  deletion_protection_enabled = var.deletion_protection_enabled
+
+  point_in_time_recovery {
+    enabled = var.point_in_time_recovery_enabled
+  }
+
   attribute {
     name = "id"
     type = "S"
